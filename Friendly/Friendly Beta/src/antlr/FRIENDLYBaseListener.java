@@ -1,6 +1,5 @@
+// Generated from C:\Users\Tyler\Desktop\Test\FRIENDLY.g4 by ANTLR 4.7
 package antlr;
-
-// Generated from C:\Users\Tyler\Desktop\FRIENDLY.g4 by ANTLR 4.7
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -60,6 +59,18 @@ public class FRIENDLYBaseListener implements FRIENDLYListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitPrint(FRIENDLYParser.PrintContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAdd(FRIENDLYParser.AddContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAdd(FRIENDLYParser.AddContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

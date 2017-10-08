@@ -3,6 +3,7 @@ package antlr;
 import java.util.HashMap;
 import java.util.Map;
 
+import antlr.FRIENDLYParser.AddContext;
 import antlr.FRIENDLYParser.AssignContext;
 import antlr.FRIENDLYParser.PrintContext;
 
@@ -33,18 +34,18 @@ public class MyListener extends FRIENDLYBaseListener{
             variables.put(variableName, Integer.parseInt(value));
     }
 
-//    @Override
-//    public void exitAdd(AddContext ctx) {
-//        // This method is called when the parser has finished
-//        // parsing the add statement
-//
-//        String variableName = ctx.ID().size() > 1 ? ctx.ID(1).getText() 
-//                : ctx.ID(0).getText();
-//        int value = ctx.ID().size() > 1 ? variables.get(ctx.ID(0).getText()) 
-//                : Integer.parseInt(ctx.NUMBER().getText());
-//
-//        variables.put(variableName, variables.get(variableName) + value);
-//    }
+    @Override
+    public void exitAdd(AddContext ctx) {
+        // This method is called when the parser has finished
+        // parsing the add statement
+
+        String variableName = ctx.ID().size() > 1 ? ctx.ID(1).getText() 
+                : ctx.ID(0).getText();
+        int value = ctx.ID().size() > 1 ? variables.get(ctx.ID(0).getText()) 
+                : Integer.parseInt(ctx.NUMBER().getText());
+
+        variables.put(variableName, variables.get(variableName) + value);
+    }
 
     @Override
     public void exitPrint(PrintContext ctx) {

@@ -2,13 +2,13 @@ grammar FRIENDLY;
 
 program : 'begin' statement+ 'end';
 
-statement : assign | print;
+statement : assign | add |  print;
 
 assign : 'let' ID 'be' (NUMBER | ID);
 
 print : 'print' (NUMBER | ID);
 
-
+add :  'add' (NUMBER | ID) 'to' ID; 
 
 ID : [a-z]+ ;
 

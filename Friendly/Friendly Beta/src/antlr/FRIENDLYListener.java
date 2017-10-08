@@ -1,7 +1,7 @@
+// Generated from C:\Users\Tyler\Desktop\Test\FRIENDLY.g4 by ANTLR 4.7
 package antlr;
 
 
-// Generated from C:\Users\Tyler\Desktop\FRIENDLY.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -49,4 +49,14 @@ public interface FRIENDLYListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitPrint(FRIENDLYParser.PrintContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link FRIENDLYParser#add}.
+	 * @param ctx the parse tree
+	 */
+	void enterAdd(FRIENDLYParser.AddContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link FRIENDLYParser#add}.
+	 * @param ctx the parse tree
+	 */
+	void exitAdd(FRIENDLYParser.AddContext ctx);
 }

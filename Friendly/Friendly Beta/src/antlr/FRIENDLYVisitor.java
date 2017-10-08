@@ -1,7 +1,7 @@
+// Generated from C:\Users\Tyler\Desktop\Test\FRIENDLY.g4 by ANTLR 4.7
 package antlr;
 
 
-// Generated from C:\Users\Tyler\Desktop\FRIENDLY.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -36,4 +36,10 @@ public interface FRIENDLYVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitPrint(FRIENDLYParser.PrintContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link FRIENDLYParser#add}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAdd(FRIENDLYParser.AddContext ctx);
 }
